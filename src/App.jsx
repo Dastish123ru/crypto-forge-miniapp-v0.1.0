@@ -19,7 +19,7 @@ const App = () => {
 
   const handleFarm = () => {
     if (timer === 0) {
-      setBalance(balance + 2);
+      setBalance((prev) => prev + 2);
       setTimer(1800);
     }
   };
